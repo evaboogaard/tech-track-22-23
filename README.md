@@ -1,4 +1,4 @@
-# :fork_and_knife:tech-track-22-23
+# 🖼 tech-track-22-23
 
 tech track 22 23, Eva Boogaard
 
