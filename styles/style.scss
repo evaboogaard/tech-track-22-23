@@ -1,10 +1,17 @@
 @import "layouts/wrappers";
 @import "layouts/banner";
+@import "layouts/layout";
 
 @import "components/buttons";
 @import "components/nav";
 
-body {
-  background: white;
-  font-family: sans-serif;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
