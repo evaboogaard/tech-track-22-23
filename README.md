@@ -1,6 +1,4 @@
-# 🖼 tech-track-22-23
-
-tech track 22 23, Eva Boogaard
+![techtrack](https://user-images.githubusercontent.com/94062754/199107886-8e528260-aa03-4e82-af19-8cb2c24ea260.png)
 
 ## ✨ Features
 
