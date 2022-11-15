@@ -1,5 +1,3 @@
-console.log('what is up my duddessss');
-
 function getData() {
   console.log('Grabbing new userdata...');
 
@@ -14,19 +12,21 @@ function getData() {
         newArray.push(item['artist']);
       });
 
+      newArray.length = 8;
+
       const upper = newArray.map((element) => {
         return element.charAt(0).toUpperCase() + element.slice(1);
       });
 
-      var options = [upper];
+      let options = [upper];
 
       function makeUL(array) {
         // Create the list element:
-        var list = document.createElement('ul');
+        let list = document.createElement('ul');
 
         for (var i = 0; i < array.length; i++) {
           // Create the list item:
-          var item = document.createElement('li');
+          let item = document.createElement('li');
 
           // Set its contents:
           item.appendChild(document.createTextNode(array[i]));
