@@ -1,0 +1,98 @@
+#stages {
+  span {
+    opacity: 0;
+    animation: fade-from-bottom 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .stage1 {
+    position: relative;
+    top: 19rem;
+    left: 21rem;
+    animation-delay: 2s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      background-image: $conic-gradient;
+      background-position: center bottom;
+      background-size: 100% 200%;
+      width: 5rem;
+      height: 4rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: -2rem;
+      left: 1rem;
+      transform: translateY(-2rem);
+      clip-path: polygon(50% 46%, 0% 100%, 100% 100%);
+      background-image: $conic-gradient;
+      background-position: center top;
+      background-size: 100% 100%;
+      width: 3rem;
+      height: 4rem;
+      content: '';
+    }
+  }
+
+  .stage2 {
+    position: relative;
+    top: 1rem;
+    left: 27rem;
+    animation-delay: 2.5s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      animation: dark-shadows 5s infinite ease-in-out;
+      border-radius: 36% 64% 40% 60% / 100% 100% 0% 0%;
+      background-color: $white;
+      width: 7rem;
+      height: 5rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 2rem;
+      left: 1.5rem;
+      animation: dark-shadows 3s infinite ease-in-out;
+      background-color: $black;
+      width: 3rem;
+      height: 3rem;
+      content: '';
+    }
+  }
+
+  .stage5 {
+    position: relative;
+    top: 32rem;
+    left: 5rem;
+    animation-delay: 2.5s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      clip-path: polygon(66% 15%, 100% 38%, 82% 100%, 18% 100%, 0 66%);
+      animation: moving-borders 10s infinite alternate;
+      background-color: $dirty-mint;
+      width: 7rem;
+      height: 7rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 3rem;
+      left: 1.7rem;
+      clip-path: polygon(24% 28%, 90% 55%, 82% 100%, 18% 100%, 10% 66%);
+      animation: hunter-to-mint 10s infinite alternate;
+      width: 4rem;
+      height: 4rem;
+      content: '';
+    }
+  }
+}
