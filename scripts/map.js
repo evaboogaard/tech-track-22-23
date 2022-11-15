@@ -1,15 +1,13 @@
-console.log('what is up my duddessss');
-
 const mapShaper = document.querySelector('#map-shaper');
 const allMapElements = document.getElementsByClassName('square');
-
-console.log(allMapElements);
+const artistElement = document.querySelector('#artists');
 
 function changeMapShape() {
   for (let elem of allMapElements) {
     elem.classList.toggle('circle');
   }
 
+  artistElement.classList.toggle('curve');
   mapShaper.classList.toggle('uncircle');
 }
 

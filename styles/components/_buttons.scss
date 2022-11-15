@@ -1,6 +1,6 @@
 #map-shaper {
   $size: 4rem;
-  transition: 0.5s ease-out;
+  transition: $transition-base;
   margin-left: calc(50% - 2rem);
   border: none;
   border-radius: $border-radius-circle;
