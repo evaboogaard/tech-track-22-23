@@ -1,5 +1,7 @@
 #map-shaper {
   $size: 4rem;
+  position: absolute;
+  bottom: -6rem;
   transition: $transition-base;
   margin-left: calc(50% - 2rem);
   border: none;
