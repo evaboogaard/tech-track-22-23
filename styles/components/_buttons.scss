@@ -1,0 +1,13 @@
+#map-shaper {
+  $size: 4rem;
+  transition: 0.5s ease-out;
+  margin-left: calc(50% - 2rem);
+  border: none;
+  border-radius: $border-radius-circle;
+  width: $size;
+  height: $size;
+
+  &.uncircle {
+    border-radius: 0;
+  }
+}

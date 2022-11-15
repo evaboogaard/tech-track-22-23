@@ -1,17 +1,10 @@
-@import "layouts/wrappers";
-@import "layouts/banner";
-@import "layouts/layout";
+@import 'utilities/variables';
 
-@import "components/buttons";
-@import "components/nav";
+@import 'layouts/wrappers';
+@import 'layouts/banner';
+@import 'layouts/layout';
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import 'components/buttons';
+@import 'components/nav';
+@import 'components/map';
+@import 'components/artists';
