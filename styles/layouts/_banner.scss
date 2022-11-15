@@ -1,0 +1,21 @@
+#banner {
+  background-color: $columbia;
+  padding: 4rem 0;
+
+  h1 {
+    padding: 1rem 0;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+
+  h2 {
+    padding: 1rem 3rem;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+
+  img {
+    margin: 2rem 0 2rem calc(50% - 10rem);
+    width: 20rem;
+  }
+}

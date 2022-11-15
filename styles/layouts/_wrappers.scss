@@ -1,0 +1,31 @@
+// intersection observer
+
+.animate {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.animate.fade {
+  opacity: 1;
+}
+
+// sections general styling
+
+#genres {
+  background-color: $dark-prussian;
+  height: 40rem;
+
+  h2 {
+    padding-top: 3rem;
+    color: $white;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+
+  p {
+    padding: 3rem 3rem;
+    color: $white;
+    font-family: $font-family-base;
+    text-align: center;
+  }
+}
