@@ -1,0 +1,257 @@
+#stages {
+  span {
+    opacity: 0;
+    animation: fade-from-bottom 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .stage1 {
+    position: relative;
+    top: 15rem;
+    left: 30rem;
+    animation-delay: 2s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      background-image: $conic-gradient;
+      background-position: center bottom;
+      background-size: 100% 200%;
+      width: 5rem;
+      height: 4rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: -2rem;
+      left: 1rem;
+      transform: translateY(-2rem);
+      clip-path: polygon(50% 46%, 0% 100%, 100% 100%);
+      background-image: $conic-gradient;
+      background-position: center top;
+      background-size: 100% 100%;
+      width: 3rem;
+      height: 4rem;
+      content: '';
+    }
+  }
+
+  .stage2 {
+    position: relative;
+    top: 2rem;
+    left: 28rem;
+    animation-delay: 2.5s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      animation: dark-shadows 5s infinite ease-in-out;
+      outline: 10px double $white;
+      border: 6px $black;
+      border-style: double double none double;
+      background-color: $white;
+      width: 5rem;
+      height: 4rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 1.5rem;
+      left: 1rem;
+      animation: dark-shadows 3s infinite ease-in-out;
+      background-color: $black;
+      width: 3rem;
+      height: 2.5rem;
+      content: '';
+    }
+  }
+
+  .stage3 {
+    position: relative;
+    top: 7rem;
+    left: 17rem;
+    animation-delay: 3s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      border-radius: $border-radius-half-circle;
+      background-color: $black;
+      width: 7rem;
+      height: 5rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 2rem;
+      left: 1.5rem;
+      animation: outline-border 10s infinite;
+      border-radius: $border-radius-half-circle;
+      background-color: $flame;
+      width: 4rem;
+      height: 3rem;
+      content: '';
+    }
+  }
+
+  .stage4 {
+    position: relative;
+    top: 33rem;
+    left: 31rem;
+    animation-delay: 3.5s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      animation: gradient-bottom-to-top 10s linear infinite;
+      background: repeating-linear-gradient(
+        $charcoal,
+        $charcoal 10px,
+        $white 10px,
+        $white 20px
+      );
+      background-size: 100% 190%;
+      width: 3.5rem;
+      height: 7rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: -3rem;
+      border: 15px $white;
+      border-style: ridge solid none solid;
+      border-radius: $border-radius-half-circle;
+      background-color: $charcoal;
+      width: 3.5rem;
+      height: 3rem;
+      content: '';
+    }
+  }
+
+  .stage5 {
+    position: relative;
+    top: 32rem;
+    left: 5rem;
+    animation-delay: 2s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      clip-path: polygon(66% 15%, 100% 38%, 82% 100%, 18% 100%, 0 66%);
+      background-color: $dirty-mint;
+      width: 7rem;
+      height: 7rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 3rem;
+      left: 1.7rem;
+      clip-path: polygon(24% 28%, 90% 55%, 82% 100%, 18% 100%, 10% 66%);
+      animation: hunter-to-mint 10s infinite alternate;
+      width: 4rem;
+      height: 4rem;
+      content: '';
+    }
+  }
+
+  .stage6 {
+    position: relative;
+    top: 17rem;
+    left: 21rem;
+    animation-delay: 4s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      animation: outline-animation 5s infinite ease-out;
+      border: 15px $mustard;
+      border-style: ridge groove none ridge;
+      background-color: $mustard;
+      width: 5rem;
+      height: 6rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.25rem;
+      border: 12px $dark-purple;
+      border-style: ridge groove none ridge;
+      background-color: $dark-purple;
+      width: 2.5rem;
+      height: 5rem;
+      content: '';
+    }
+  }
+
+  .stage7 {
+    position: relative;
+    top: 25rem;
+    left: 8rem;
+    animation-delay: 3s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      animation: border-radius-animation 7s infinite ease-in-out;
+      background-color: $gold;
+      width: 7rem;
+      height: 5rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 2rem;
+      left: 2.5rem;
+      outline: 5px solid $dark-chestnut;
+      box-shadow: 0 0 1rem $dark-chestnut;
+      border-radius: $border-radius-half-circle;
+      background-color: $charcoal;
+      width: 2rem;
+      height: 3rem;
+      content: '';
+    }
+  }
+
+  .stage8 {
+    position: relative;
+    top: 27rem;
+    left: 21rem;
+    animation-delay: 3.5s;
+    transition: $transition-base;
+
+    &::before {
+      position: absolute;
+      outline: 1px dotted $white;
+      border: 2.5px dotted $white;
+      border-style: dotted dotted none dotted;
+      background-color: $dark-sea-green;
+      width: 6rem;
+      height: 5rem;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 1.5rem;
+      left: 1rem;
+      animation: white-glow 5s infinite linear;
+      outline: 1px solid $white;
+      border: 3px dotted $white;
+      border-style: dashed dashed none dashed;
+      background-color: $sea-green;
+      width: 3rem;
+      height: 3.5rem;
+      content: '';
+    }
+  }
+}

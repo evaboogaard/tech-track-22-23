@@ -1,11 +1,32 @@
 // DECLARING VARIABLES
 
 // colors
+$white: #ffff;
+$black: #000000;
+$transparent: rgba(0, 0, 0, 0);
+
 $lapis-lazuli: #2a628f;
 $dark-prussian: #13293d;
 $prussian: #16324f;
 $columbia: #c1e0f7;
-$white: #ffff;
+
+$flame: #d36135;
+$chestnut: #a24936;
+$dark-chestnut: #361008;
+
+$charcoal: #373f51;
+
+$gold: #e2c391;
+
+$mustard: #ffd447;
+$dark-purple: #3d2b3d;
+
+$hunter: #5c9f89;
+$dark-hunter: #37715e;
+$dirty-mint: #83bca9;
+
+$dark-sea-green: #388659;
+$sea-green: #52aa5e;
 
 // margin & padding
 
@@ -24,6 +45,41 @@ $font-size-xl: 1.1rem;
 
 // border-radius
 $border-radius-circle: 50%;
+$border-radius-half-circle: 50% 50% 40% 60% / 100% 100% 0% 0%;
 
 // transitions
 $transition-base: 0.5s ease-out;
+
+// gradients
+$conic-gradient: conic-gradient(
+  white 0% 5%,
+  crimson 5% 9%,
+  darkred 9% 10%,
+  white 10% 15%,
+  crimson 15% 19%,
+  darkred 19% 20%,
+  white 20% 25%,
+  crimson 25% 29%,
+  darkred 29% 30%,
+  white 30% 35%,
+  crimson 35% 39%,
+  darkred 39% 40%,
+  white 40% 45%,
+  crimson 45% 49%,
+  darkred 49% 50%,
+  white 50% 55%,
+  crimson 55% 59%,
+  darkred 59% 60%,
+  white 60% 65%,
+  crimson 65% 69%,
+  darkred 69% 70%,
+  white 70% 75%,
+  crimson 75% 79%,
+  darkred 79% 80%,
+  white 80% 85%,
+  crimson 85% 89%,
+  darkred 89% 90%,
+  white 90% 95%,
+  crimson 95% 99%,
+  darkred 99% 100%
+);

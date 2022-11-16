@@ -9,12 +9,14 @@
   }
 
   h2 {
+    animation: fade-from-bottom 1s;
     padding: 1rem 3rem;
     font-family: $font-family-base;
     text-align: center;
   }
 
   img {
+    animation: fade-from-bottom 1s;
     margin: 2rem 0 2rem calc(50% - 10rem);
     width: 20rem;
   }
