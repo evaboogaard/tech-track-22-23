@@ -3,6 +3,7 @@
 // colors
 $white: #ffff;
 $black: #000000;
+$transparent: rgba(0, 0, 0, 0);
 
 $lapis-lazuli: #2a628f;
 $dark-prussian: #13293d;
@@ -13,8 +14,19 @@ $flame: #d36135;
 $chestnut: #a24936;
 $dark-chestnut: #361008;
 
+$charcoal: #373f51;
+
+$gold: #e2c391;
+
+$mustard: #ffd447;
+$dark-purple: #3d2b3d;
+
 $hunter: #5c9f89;
+$dark-hunter: #37715e;
 $dirty-mint: #83bca9;
+
+$dark-sea-green: #388659;
+$sea-green: #52aa5e;
 
 // margin & padding
 
@@ -33,6 +45,7 @@ $font-size-xl: 1.1rem;
 
 // border-radius
 $border-radius-circle: 50%;
+$border-radius-half-circle: 50% 50% 40% 60% / 100% 100% 0% 0%;
 
 // transitions
 $transition-base: 0.5s ease-out;

@@ -1,3 +1,4 @@
+// artist names & stages
 @keyframes fade-from-bottom {
   0% {
     transform: translateY(1rem);
@@ -10,6 +11,7 @@
   }
 }
 
+// map divs
 @keyframes scale-onload {
   0% {
     transform: scale(0);
@@ -27,40 +29,7 @@
   }
 }
 
-@keyframes moving-borders {
-  0% {
-    border-right: 60px solid $hunter;
-    border-left: 60px solid $hunter;
-  }
-
-  50% {
-    border-right: 5px solid $hunter;
-    border-left: 5px solid $hunter;
-  }
-
-  100% {
-    border-right: 60px solid $hunter;
-    border-left: 60px solid $hunter;
-  }
-}
-
-@keyframes hunter-to-mint {
-  0% {
-    border: 5px solid $hunter;
-    background-color: $dirty-mint;
-  }
-
-  50% {
-    border: 5px solid $dirty-mint;
-    background-color: $hunter;
-  }
-
-  100% {
-    border: 5px solid $hunter;
-    background-color: $dirty-mint;
-  }
-}
-
+// stage 2
 @keyframes dark-shadows {
   0% {
     box-shadow: 0 0 0.2rem $black;
@@ -72,5 +41,99 @@
 
   100% {
     box-shadow: 0 0 0.2rem $black;
+  }
+}
+
+// stage 3
+@keyframes outline-border {
+  0% {
+    outline: 20px solid $chestnut;
+    border: 5px solid $dark-chestnut;
+  }
+
+  50% {
+    outline: 1px solid $chestnut;
+    border: 1px solid $dark-chestnut;
+  }
+
+  100% {
+    outline: 20px solid $chestnut;
+    border: 5px solid $dark-chestnut;
+  }
+}
+
+// stage 4
+@keyframes gradient-bottom-to-top {
+  0% {
+    background-position: center top;
+  }
+
+  100% {
+    background-position: center bottom;
+  }
+}
+
+// stage 5
+@keyframes hunter-to-mint {
+  0% {
+    border: 5px solid $hunter;
+    background-color: $dark-hunter;
+  }
+
+  50% {
+    border: 5px solid $dirty-mint;
+    background-color: $hunter;
+  }
+
+  100% {
+    border: 5px solid $hunter;
+    background-color: $dark-hunter;
+  }
+}
+
+// stage 6
+@keyframes outline-animation {
+  0% {
+    outline: 5px solid $dark-purple;
+    box-shadow: 0 0 0.1rem $mustard;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  50% {
+    outline: 0.1px solid $dark-purple;
+    box-shadow: 0 0 1rem $mustard;
+    border-radius: 0;
+  }
+  100% {
+    outline: 5px solid $dark-purple;
+    box-shadow: 0 0 0.1rem $mustard;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+@keyframes border-radius-animation {
+  0% {
+    border-radius: 30% 70% 40% 60% / 100% 100% 0% 0%;
+  }
+
+  50% {
+    border-radius: 66% 34% 40% 60% / 100% 100% 0% 0%;
+  }
+
+  100% {
+    border-radius: 30% 70% 40% 60% / 100% 100% 0% 0%;
+  }
+}
+
+@keyframes white-glow {
+  0% {
+    box-shadow: 0 0 30px $white;
+  }
+
+  50% {
+    box-shadow: 0 0 2px $white;
+  }
+
+  100% {
+    box-shadow: 0 0 30px $white;
   }
 }
