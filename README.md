@@ -2,10 +2,24 @@
 
 ## ✨ Features
 
-|Features|
-|:-------|
+| Features |
+| :------- |
 
 ## 🧙‍♂ Install and Run the project
+
+```javascript
+git clone github.com/evaboogaard/tech-track-22-23.git
+```
+
+```javascript
+npm install
+```
+
+```javascript
+npm run dev
+```
+
+Then, the project will run through vite on localhost:5173
 
 ## 🚀 Contribute
 

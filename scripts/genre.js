@@ -18,7 +18,7 @@ function getData() {
 
       let editedArray = newArray.map((item) => item.split(',')).flat();
 
-      let genres = {};
+      let genres = [];
 
       editedArray.flat().forEach((genre) => {
         genre = genre.trim();
